@@ -2,7 +2,7 @@
 
  static void task1()
 {
-    Console.WriteLine("Tk1 !");
+    Console.WriteLine("T1 !");
     Console.Write("s= ");
     string? str = Console.ReadLine();
     float s = 0; 
