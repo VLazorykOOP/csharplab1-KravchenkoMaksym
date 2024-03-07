@@ -1,15 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Task_4
 {
     internal class Program
     {
-        static void Main(string[] args)
+        public static void Main()
         {
+            Console.Write("Введiть число мiсяцiв: ");
+            int m = Convert.ToInt32(Console.ReadLine());
+            DateTime currentDate = DateTime.Now;
+            DateTime unknownDate = currentDate.AddMonths(-m);
+            Console.WriteLine("Невiдома дата: " + unknownDate.ToString("dd/MM/yyyy"));
         }
     }
 }
